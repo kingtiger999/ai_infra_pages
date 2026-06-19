@@ -54,7 +54,7 @@ const adapter = process.env.CF_WORKERS
 export default defineConfig({
 	site: "https://kingtiger999.github.io/",
 
-	base: "/ai_infa_pages/",
+	base: "/ai_infra_pages",
 	trailingSlash: "always",
 
 	adapter,
