@@ -14,24 +14,27 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	const links: NavBarLink[] = [
 		// 主页
 		LinkPresets.Home,
+		LinkPresets.Categories,
+		LinkPresets.Archive,
+		LinkPresets.Tags,
 	];
 
 	// 文章及其子菜单
-	links.push({
-		name: "文章",
-		url: "#",
-		icon: "material-symbols:article",
-		children: [
-			// 归档
-			LinkPresets.Archive,
+	// links.push({
+	// 	name: "文章",
+	// 	url: "#",
+	// 	icon: "material-symbols:article",
+	// 	children: [
+	// 		// 归档
+	// 		LinkPresets.Archive,
 
-			// 分类
-			LinkPresets.Categories,
+	// 		// 分类
+	// 		LinkPresets.Categories,
 
-			// 标签
-			LinkPresets.Tags,
-		],
-	});
+	// 		// 标签
+	// 		LinkPresets.Tags,
+	// 	],
+	// });
 
 	// 友链
 	links.push(LinkPresets.Friends);
@@ -40,18 +43,18 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	links.push(LinkPresets.Guestbook);
 
 	// 我的及其子菜单
-	links.push({
-		name: "我的",
-		url: "#",
-		icon: "material-symbols:person",
-		children: [
-			// 相册
-			LinkPresets.Gallery,
+	// links.push({
+	// 	name: "我的",
+	// 	url: "#",
+	// 	icon: "material-symbols:person",
+	// 	children: [
+	// 		// 相册
+	// 		LinkPresets.Gallery,
 
-			// 番组计划
-			LinkPresets.Bangumi,
-		],
-	});
+	// 		// 番组计划
+	// 		LinkPresets.Bangumi,
+	// 	],
+	// });
 
 	// 关于及其子菜单
 	links.push({
@@ -68,38 +71,38 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 	});
 
 	// 自定义导航栏链接
-	links.push({
-		name: "链接",
-		url: "#",
-		icon: "material-symbols:link",
-		// 子菜单
-		children: [
-			{
-				name: "GitHub",
-				url: "https://github.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:github",
-			},
-			{
-				name: "Gitee",
-				url: "https://gitee.com/CuteLeaf/Firefly",
-				external: true,
-				icon: "fa7-brands:gitee",
-			},
-			{
-				name: "QQ交流群",
-				url: "https://qm.qq.com/q/ZGsFa8qX2G",
-				external: true,
-				icon: "fa7-brands:qq",
-			},
-			{
-				name: "Firefly文档",
-				url: "https://docs-firefly.cuteleaf.cn",
-				external: true,
-				icon: "material-symbols:docs",
-			},
-		],
-	});
+	// links.push({
+	// 	name: "链接",
+	// 	url: "#",
+	// 	icon: "material-symbols:link",
+	// 	// 子菜单
+	// 	children: [
+	// 		{
+	// 			name: "GitHub",
+	// 			url: "https://github.com/CuteLeaf/Firefly",
+	// 			external: true,
+	// 			icon: "fa7-brands:github",
+	// 		},
+	// 		{
+	// 			name: "Gitee",
+	// 			url: "https://gitee.com/CuteLeaf/Firefly",
+	// 			external: true,
+	// 			icon: "fa7-brands:gitee",
+	// 		},
+	// 		{
+	// 			name: "QQ交流群",
+	// 			url: "https://qm.qq.com/q/ZGsFa8qX2G",
+	// 			external: true,
+	// 			icon: "fa7-brands:qq",
+	// 		},
+	// 		{
+	// 			name: "Firefly文档",
+	// 			url: "https://docs-firefly.cuteleaf.cn",
+	// 			external: true,
+	// 			icon: "material-symbols:docs",
+	// 		},
+	// 	],
+	// });
 
 	// 文档链接
 	// links.push({
@@ -165,18 +168,18 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		url: "/about/",
 		icon: "material-symbols:person",
 	},
-	Bangumi: {
-		name: "番组计划",
-		url: "/bangumi/",
-		icon: "material-symbols:movie",
-		pageKey: "bangumi",
-	},
-	Gallery: {
-		name: "相册",
-		url: "/gallery/",
-		icon: "material-symbols:photo-library",
-		pageKey: "gallery",
-	},
+	// Bangumi: {
+	// 	name: "番组计划",
+	// 	url: "/bangumi/",
+	// 	icon: "material-symbols:movie",
+	// 	pageKey: "bangumi",
+	// },
+	// Gallery: {
+	// 	name: "相册",
+	// 	url: "/gallery/",
+	// 	icon: "material-symbols:photo-library",
+	// 	pageKey: "gallery",
+	// },
 };
 
 export const navBarConfig: NavBarConfig = getDynamicNavBarConfig();
