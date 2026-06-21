@@ -9,21 +9,21 @@ export const siteConfig: SiteConfig = {
 	title: "芜湖",
 
 	// 站点副标题
-	subtitle: "AI学习之路",
+	subtitle: "芜湖的嵌入式小屋",
 
 	// 站点 URL
-	site_url: "https://kingtiger999.github.io/ai_infra_pages/",
+	site_url: "https://kingtiger999.github.io/embedded_learn/",
 
 	// 站点描述
 	description:
-		"Firefly 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客主题模板，专为技术爱好者和内容创作者设计。该主题融合了现代 Web 技术栈，提供了丰富的功能模块和高度可定制的界面，让您能够轻松打造出专业且美观的个人博客网站。",
+		"嵌入式软硬件学习记录，分享嵌入式小项目",
 
 	// 站点关键词
 	keywords: [
-		"AI",
-		"AI Infra",
-		"CUDA",
+		"C",
 		"C++",
+		"嵌入式软件",
+		"嵌入式硬件",
 		"博客",
 		"技术博客",
 	],
